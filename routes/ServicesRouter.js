@@ -19,7 +19,7 @@ router.post("/", async (req, res) => {
 
 router.get("/", async (req, res) => {
     try {
-        const response = await Service.find();
+        const response = await Services.find();
         console.log(response);
         res.status(200).json(response);
     } catch (error) {
